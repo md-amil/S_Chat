@@ -72,6 +72,7 @@ class MainActivity : AppCompatActivity() {
         socket.disconnect()
         LocalBroadcastManager.getInstance(this).unregisterReceiver(userDataChangeReceiver)
         super.onDestroy()
+        
     }
 
     private val userDataChangeReceiver = object: BroadcastReceiver(){
